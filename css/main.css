@@ -207,16 +207,6 @@ nav .icon-burger .line {
 
 
 /* MODAL */
-.modal-wrap {
-    background-color: rgba(0, 0, 0, 0, 0.5);
-    height: 100%;
-    width: 100%;
-    left: 0;
-    top: 0;
-    overflow: auto;
-    z-index: 1;
-}
-
 .bg-modal {
     position: fixed;
     top: 50%;
