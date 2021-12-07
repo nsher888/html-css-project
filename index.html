@@ -49,18 +49,20 @@
     <!-- MODAL -->
 
     <div class="bg-modal">
+        <div class="error"></div>
         <div class="modal-header">
             <h2>Login to your account</h2>
             <button class="close">&times;</button>
         </div>
         <div class="log-form">
-            <form>
-                <input type="text" title="username" placeholder="username" />
-                <input type="password" title="username" placeholder="password" />
+            <form id="form">
+                <input id="name" name="name" type="text" title="username" placeholder="username" />
+                <input id="password" name="password" type="password" title="username" placeholder="password" />
                 <button type="submit" class="form_button">Login</button>
             </form>
         </div>
     </div>
+    <div id="overlay"></div>
     <footer class="footer">
         <div class="container">
             <div class="row">

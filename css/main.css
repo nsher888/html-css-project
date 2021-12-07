@@ -138,6 +138,7 @@ nav .icon-burger .line {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    z-index: 2;
 }
 
 .hero-overlay {
@@ -242,7 +243,7 @@ nav .icon-burger .line {
     font-weight: bold;
 }
 
-.modal-header .close:hover{
+.modal-header .close:hover {
     color: white;
 }
 
@@ -286,4 +287,21 @@ nav .icon-burger .line {
 
 .form_button:hover {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+    z-index: 3;
 }
